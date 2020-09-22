@@ -28,7 +28,7 @@ public class GatewayConfig {
                         .path("/v1/joke")
                         .filters(f ->
                                 f.addRequestHeader("x-rapidapi-host", "joke3.p.rapidapi.com")
-                                        .addRequestHeader("x-rapidapi-key", "36d4ae76a5msha0ad928b86c3b1cp12c8b3jsn0bc35a88f272")
+                                        .addRequestHeader("x-rapidapi-key", "your_key")
                                         .hystrix(config -> config.setName("joke-service")
                                                 .setFallbackUri("forward:/jokefallback"))
                         )
