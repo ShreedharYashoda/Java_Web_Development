@@ -18,7 +18,7 @@ public class GatewayConfig {
                         .path("/all")
                         .filters(f ->
                                 f.addRequestHeader("x-rapidapi-host", "restcountries-v1.p.rapidapi.com")
-                                        .addRequestHeader("x-rapidapi-key", "36d4ae76a5msha0ad928b86c3b1cp12c8b3jsn0bc35a88f272")
+                                        .addRequestHeader("x-rapidapi-key", "your_key")
                                         .hystrix(config -> config.setName("countries-service")
                                                 .setFallbackUri("forward:/countriesfallback"))
                         )
